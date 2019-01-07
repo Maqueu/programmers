@@ -15,7 +15,7 @@
 			echo $user->insertUser();
 		break;
 
-		case 3: // delete user
+		case 3: // delete user and its phones
 			$user = New UserController();
 			echo $user->deleteUser();
 		break;

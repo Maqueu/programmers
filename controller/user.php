@@ -118,9 +118,14 @@
 		}
 
 		function deleteUser(){
-			$user = New User();
-			$user->setId($_POST['id']);
-			return $user->deleteUser();
+			$phone = New PhoneController();
+			if ($phone->deleteUsersPhone($_POST['id']) == 1) {
+				$user = New User();
+				$user->setId($_POST['id']);
+				return $user->deleteUser();
+			}
+
+			return "Error while deleting the user's phones";
 		}
 
 		function checkEmailUser(){

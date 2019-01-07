@@ -33,5 +33,11 @@
 
 			return $phone->deletePhone();
 		}
+
+		function deleteUsersPhone($user){
+			$phone = New Phone();
+			$phone->setIdUser($user);
+			return $phone->deleteUsersPhone();
+		}
 	}
 ?>

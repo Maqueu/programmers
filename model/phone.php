@@ -71,5 +71,17 @@
 				return 1;
 			}
 		}
+
+		function deleteUsersPhone(){
+			$sql_delUsersPhone = "DELETE FROM prog_phones WHERE id_user = :user";
+
+			global $conn;
+			$que_delUsersPhone = $conn->prepare($sql_delUsersPhone);
+			$que_delUsersPhone->bindParam('user', $this->idUser, PDO:: PARAM_INT);
+
+			if ($que_delUsersPhone->execute()) {
+				return 1;
+			}
+		}
 	}
 ?>
