@@ -15,17 +15,17 @@
 		<input type="hidden" name="idUser" value="<?= $id ?>">
 		<div class="col-md-6">
 			<label for="txtName">Name</label>
-			<input type="text" class="form-control" maxlength="150" name="txtName" id="txtName" value="<?= $d->name ?>">
+			<input type="text" class="form-control" maxlength="70" name="txtName" id="txtName" value="<?= $d->name ?>">
 		</div>
 		<div class="col-md-6">
 			<label for="txtSurname">Surname</label>
-			<input type="text" class="form-control" maxlength="150" name="txtSurname" id="txtSurname" value="<?= $d->surname ?>">
+			<input type="text" class="form-control" maxlength="100" name="txtSurname" id="txtSurname" value="<?= $d->surname ?>">
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
 			<label for="txtEmail">E-mail</label>
-			<input type="email" class="form-control" maxlength="100" name="txtEmail" id="txtEmail" value="<?= $d->email ?>">
+			<input type="email" class="form-control" maxlength="200" name="txtEmail" id="txtEmail" value="<?= $d->email ?>">
 		</div>
 	</div>
 	<div id="listPhones" class="row">
