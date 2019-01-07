@@ -64,7 +64,7 @@
 			}
 			else{
 				$html .= 		"<tr>
-									<td colspan=\"5\" align=\"center\">Nenhum estabelecimento encontrado</td>
+									<td colspan=\"5\" align=\"center\">No one Users found</td>
 								</tr>";
 			}
 
